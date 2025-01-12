@@ -2,40 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Script from "next/script";
-import { list } from "postcss";
-import { text } from "stream/consumers";
 
 export default function Home() {
-  const active_route = usePathname();
-  const menu = [
-    {
-      name: "MVC",
-      link: "/mvc",
-    },
-    {
-      name: "Front End",
-      link: "/front-end",
-    },
-    {
-      name:"Back End",
-      link: "/back-end",
-    },
-    {
-      name:"Database",
-      link: "/database",
-    },
-    {
-      name:"Mobile",
-      link: "/Mobile",
-    },
-    {
-      name:"Automated Web Testing",
-      link: "/api",
-    },
-  ]
-
+  
   const skills = [
     {
       text_about: "Experience in programming languages :",
@@ -233,7 +203,7 @@ export default function Home() {
           />
           <div className="flex flex-col gap-4">
             <h1 id="title" className="text-2xl md:text-4xl font-[family-name:var(--font-geist-mono)] font-bold">Freelancer Fullstack</h1>
-            <Script>
+            <Script id="tittle-backup-script">
               {`
                 const title = document.getElementById("title");
                 const fixedTitle = document.getElementById("fixed-title");
