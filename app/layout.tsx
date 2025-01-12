@@ -5,6 +5,7 @@ import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  weight: '400',
 });
 
 const geistMono = Geist_Mono({
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-yellow-200 to-slate-300 sm:bg-gradient-to-br sm:from-yellow-900 sm:to-slate-800`}
+        className={`${geistSans.className} ${geistMono.variable} antialiased bg-gradient-to-br from-yellow-200 to-slate-300 sm:bg-gradient-to-br sm:from-yellow-900 sm:to-slate-800`}
       >
           {children}
       </body>
