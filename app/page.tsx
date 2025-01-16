@@ -298,7 +298,7 @@ export default function Home() {
                     <Link
                       key={index}
                       href={skill.link}
-                      className={"rounded-full border border-solid transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-8 sm:h-12 px-2 hover:scale-105 sm:px-4 " + (skill.level === 3 ? "" : " opacity-50") }
+                      className={"rounded-full border border-solid transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-8 sm:h-12 px-2 hover:scale-105 sm:px-4 " + (skill.level === 3 ? "opacity-75" : " opacity-50") }
                       rel="noopener noreferrer"
                       translate="no"
                     >
@@ -309,10 +309,16 @@ export default function Home() {
               </div>
               <span className="flex gap-3 items-end flex-wrap justify-end mt-auto border-t border-black dark:border-white">
                 <div className="flex items-center gap-0.5">
-                  medium <div className="bg-foreground hover:bg-[#383838] dark:hover:bg-[#ccc] w-4 h-4 tex"/> 
+                  skilled 
+                  <div className="bg-foreground hover:bg-[#383838] dark:hover:bg-[#ccc] w-4 h-4"/> 
                 </div>
                 <div className="flex items-center gap-0.5">
-                  low <div className="bg-foreground hover:bg-[#383838] dark:hover:bg-[#ccc] w-4 h-4 opacity-50"/>
+                  proficient 
+                  <div className="bg-foreground hover:bg-[#383838] dark:hover:bg-[#ccc] w-4 h-4 opacity-75"/> 
+                </div>
+                <div className="flex items-center gap-0.5">
+                  basic 
+                  <div className="bg-foreground hover:bg-[#383838] dark:hover:bg-[#ccc] w-4 h-4 opacity-50"/>
                 </div>
               </span>
             </div>
