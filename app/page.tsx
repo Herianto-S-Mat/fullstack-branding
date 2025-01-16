@@ -290,7 +290,7 @@ export default function Home() {
         {
           skills.map((skill, index) => (
 
-            <div key={index} className="bg-gradient-to-br rounded p-4 flex flex-col gap-4 w-full border border-black dark:border-white">
+            <div key={index} className="bg-gradient-to-br rounded p-4 flex flex-col gap-4 w-full">
               <h1 className="text-1xl md:text-2xl font-[family-name:var(--font-geist-mono)] border-b border-black dark:border-white pb-2">{skill.text_about}</h1>
               <div className="flex gap-2 sm:gap-4 items-center flex-row flex-wrap justify-center mb-2">
                 {
