@@ -320,6 +320,10 @@ export default function Home() {
                   basic 
                   <div className="bg-foreground hover:bg-[#383838] dark:hover:bg-[#ccc] w-4 h-4 opacity-50"/>
                 </div>
+                <div className="flex items-center gap-0.5">
+                  basic but not sure 
+                  <div className="bg-foreground hover:bg-[#383838] dark:hover:bg-[#ccc] w-4 h-4 opacity-20"/>
+                </div>
               </span>
             </div>
           ))
