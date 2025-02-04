@@ -213,7 +213,7 @@ export default function Home() {
         <div className="flex flex-col gap-4 items-center sm:flex-row justify-between w-full align-center">
           <Image 
             className="rounded-full sm:rounded-0 sm:order-1"
-            src="/profile.png"
+            src="images/profile.png"
             alt="Next.js logo"
             width={180}
             height={38}
