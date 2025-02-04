@@ -292,7 +292,7 @@ export default function Home() {
           <div className="flex flex-col gap-4 border border-black dark:border-white p-4">
             <h1 className="text-lg md:text-xl font-[family-name:var(--font-geist-mono)] border-b border-black dark:border-white pb-2 flex justify-between">
               Pokemon 
-              <a href="https://pokemon-learning-vite-heriantos-projects.vercel.app/" className="font-[family-name:var(--font-geist-mono)]">
+              <a target="_blank" href="https://pokemon-learning-vite-heriantos-projects.vercel.app/" className="font-[family-name:var(--font-geist-mono)]">
               <Image
                 aria-hidden
                 src="/external-link.svg"
@@ -309,7 +309,7 @@ export default function Home() {
           <div className="flex flex-col gap-4 border border-black dark:border-white p-4">
             <h1 className="text-lg md:text-xl font-[family-name:var(--font-geist-mono)] border-b border-black dark:border-white pb-2 flex justify-between">
               API Clove Comodity 
-              <a href="https://api-clove.vercel.app/" className="font-[family-name:var(--font-geist-mono)]">
+              <a target="_blank" href="https://api-clove.vercel.app/" className="font-[family-name:var(--font-geist-mono)]">
               <Image
                 aria-hidden
                 src="/external-link.svg"
@@ -326,7 +326,7 @@ export default function Home() {
           <div className="flex flex-col gap-4 border border-black dark:border-white p-4">
             <h1 className="text-lg md:text-xl font-[family-name:var(--font-geist-mono)] border-b border-black dark:border-white pb-2 flex justify-between">
               Pilot Bandung 
-              <a href="https://pilotbandung.com/" className="font-[family-name:var(--font-geist-mono)]">
+              <a target="_blank" href="https://pilotbandung.com/" className="font-[family-name:var(--font-geist-mono)]">
               <Image
                 aria-hidden
                 src="/external-link.svg"
@@ -343,7 +343,7 @@ export default function Home() {
           <div className="flex flex-col gap-4 border border-black dark:border-white p-4">
             <h1 className="text-lg md:text-xl font-[family-name:var(--font-geist-mono)] border-b border-black dark:border-white pb-2 flex justify-between">
               Project Learning
-              <a href="https://portofilio-tailwind-github-io-heriantos-projects.vercel.app/" className="font-[family-name:var(--font-geist-mono)]">
+              <a target="_blank" href="https://portofilio-tailwind-github-io-heriantos-projects.vercel.app/" className="font-[family-name:var(--font-geist-mono)]">
               <Image
                 aria-hidden
                 src="/external-link.svg"
