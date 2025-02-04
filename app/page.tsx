@@ -13,7 +13,7 @@ export default function Home() {
         {
           name: "HTML",
           link: "programming-languages/html",
-          level: 3,
+          level: 4,
         },
         {
           name: "CSS",
@@ -21,23 +21,23 @@ export default function Home() {
           level: 4,
         },
         {
+          name: "Javascript",
+          link: "programming-languages/javascript",
+          level: 4,
+        },
+        {
+          name: "PHP",
+          link: "programming-languages/php",
+          level: 3,
+        },
+        {
           name: "Typescript",
           link: "programming-languages/typescript",
           level: 3,
         },
         {
-          name: "Javascript",
-          link: "programming-languages/javascript",
-          level: 3,
-        },
-        {
           name: "Python",
           link: "programming-languages/python",
-          level: 3,
-        },
-        {
-          name: "PHP",
-          link: "programming-languages/php",
           level: 3,
         },
         {
@@ -48,7 +48,7 @@ export default function Home() {
         {
           name: "R",
           link: "programming-languages/r",
-          level: 3,
+          level: 2,
         }
       ]
     },
@@ -58,7 +58,7 @@ export default function Home() {
         {
           name: "MVC",
           link: "development-area/mvc",
-          level: 3,
+          level: 1,
         },
         {
           name: "Front End",
@@ -76,14 +76,9 @@ export default function Home() {
           level: 3,
         },
         {
-          name:"Mobile",
-          link: "development-area/mobile",
-          level: 3,
-        },
-        {
           name:"Automated Web Testing",
           link: "development-area/automated-testing",
-          level: 3,
+          level: 2,
         },
       ]
     },
@@ -92,33 +87,29 @@ export default function Home() {
       list : [
         {
           name: "MySQL",
-          link: "/mysql",
+          link: "database/mysql",
           level: 3,
         },
         {
           name: "PostgreSQL",
-          link: "/postgresql",
+          link: "database/postgresql",
           level: 3,
         },
         {
           name: "MongoDB",
-          link: "/mongodb",
-          level: 3,
+          link: "database/mongodb",
+          level: 1,
         },
         {
           name: "Redis",
-          link: "/redis",
-          level: 3,
+          link: "database/redis",
+          level: 1,
         },
         {
           name: "SQLite",
-          link: "/sqlite",
-          level: 3,
+          link: "database/sqlite",
+          level: 2,
         },
-        {
-          name: "GraphQL",
-          link: "/graphql",
-        }
       ]
     },
     {
@@ -126,12 +117,12 @@ export default function Home() {
       list : [
         {
           name: "Windows",
-          link: "/windows",
+          link: "OS/windows",
           level: 3,
         },
         {
           name: "WSL : Windows Subsystem for Linux",
-          link: "/wsl",
+          link: "OS/wsl",
           level: 3,
         },
         // {
@@ -149,8 +140,8 @@ export default function Home() {
       list : [
         {
           name: "VSCode",
-          link: "/vscode",
-          level: 3,
+          link: "IDE/vscode",
+          level: 4,
         },
         // {
         //   name: "Visual Studio",
@@ -158,12 +149,13 @@ export default function Home() {
         // },
         {
           name: "Sublime Text", 
-          link: "/sublime-text",
-          level: 3,
+          link: "IDE/sublime-text",
+          level: 1,
         },
         {
           name: "Notepad++",
-          link: "/notepad",
+          link: "IDE/notepad",
+          level: 1,
         }
         // {
         //   name: "Atom",
@@ -176,18 +168,18 @@ export default function Home() {
       list : [
         {
           name: "Version Control: Git (GitHub, GitLab)",
-          link: "/git",
+          link: "dev-ops/git",
           level: 3,
         },
         {
           name: "Cloud Hosting: Vercel",
-          link: "/vercel",
+          link: "dev-ops/vercel",
           level: 3,
         },
         {
           name: "Cloud Hosting: Firebase",
-          link: "/firebase",
-          level: 3,
+          link: "dev-ops/firebase",
+          level: 1,
         },
         // {
         //   name: "Docker",
@@ -203,7 +195,7 @@ export default function Home() {
   ]
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16 sm:p-16 font-[family-name:var(--font-geist-sans)]">
-        <h1 id="fixed-title" className="fixed text-2xl z-10 md:text-4xl font-[family-name:var(--font-geist-mono)] w-full max-w-5xl top-0 bg-yellow-100 dark:bg-yellow-950 sm:text-base  rounded-b-lg border-b border-solid border-[#fff] hidden-title p-4">Freelancer Fullstack</h1>
+        <h1 id="fixed-title" className="fixed text-2xl z-10 md:text-4xl font-[family-name:var(--font-geist-mono)] w-full max-w-5xl top-0 bg-yellow-100 dark:bg-yellow-950 sm:text-base  rounded-b-lg border-b border-solid border-[#fff] hidden-title p-4">Fullstack Developer</h1>
         <style jsx>{`
           .hidden-title {
             opacity: 0;
@@ -218,7 +210,7 @@ export default function Home() {
           }
         `}</style>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div className="flex flex-col gap-4 items-center sm:flex-row justify-between w-full align-center border-b border-black dark:border-white">
+        <div className="flex flex-col gap-4 items-center sm:flex-row justify-between w-full align-center">
           <Image 
             className="rounded-full sm:rounded-0 sm:order-1"
             src="/profile.png"
@@ -228,7 +220,7 @@ export default function Home() {
             priority
           />
           <div className="flex flex-col gap-4">
-            <h1 id="title" className="text-2xl md:text-4xl font-[family-name:var(--font-geist-mono)] font-bold">Freelancer Fullstack</h1>
+            <h1 id="title" className="text-2xl md:text-4xl font-[family-name:var(--font-geist-mono)] font-bold">Fullstack Developer</h1>
             <Script id="tittle-backup-script">
               {`
                 const title = document.getElementById("title");
@@ -270,22 +262,103 @@ export default function Home() {
                 <tr>
                   <td className="font-[family-name:var(--font-geist-mono)]">GitLab</td>
                   <td> : </td>
-                  <td className="font-[family-name:var(--font-geist-mono)]">Made-By-Heri</td>
-                </tr>
-                <tr>
-                  <td className="font-[family-name:var(--font-geist-mono)]">LinkedIn</td>
-                  <td> : </td>
-                  <td className="font-[family-name:var(--font-geist-mono)]">heriantosdfsldk</td>
+                  <td className="font-[family-name:var(--font-geist-mono)]">Herianto-S-Mat</td>
                 </tr>
                 <tr>
                   <td className="font-[family-name:var(--font-geist-mono)]">Domisili</td>
                   <td> : </td>
-                  <td className="font-[family-name:var(--font-geist-mono)]">Sulawesi Selatan</td>
+                  <td className="font-[family-name:var(--font-geist-mono)]">Bandung</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
+        <div className="w-full max-w-5xl border-b border-black dark:border-white"/>
+        <h3 className="text-xl md:text-2xl font-[family-name:var(--font-geist-mono)] font-bold">Introduce</h3>
+        <p className="max-w-5xl text-justify indent-8 px-4">
+          I am a programmer with good problem solving skills and always enthusiastic to learn and explore new technologies. Currently, I am able to use several programming languages ​​including PHP, JavaScript, TypeScript, and Python. I first got to know programming algorithms with C++ but now I have started to forget. PHP is the second language that I learned seriously and used to work on my thesis. Lately JavaScript is the language that I actively use.
+        </p>
+        <div className="w-full max-w-5xl border-b border-black dark:border-white px-4"/>
+        <h3 className="text-xl md:text-2xl font-[family-name:var(--font-geist-mono)] font-bold">Portofolio</h3>
+        <div className="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 gap-4 px-4">
+          <div className="flex flex-col gap-4 border border-black dark:border-white p-4">
+            <h1 className="text-lg md:text-xl font-[family-name:var(--font-geist-mono)] border-b border-black dark:border-white pb-2 flex justify-between">
+              This Site
+            </h1>
+            <p className="text-justify indent-4">
+              project studi kasus untuk mempelajari framework Next.Js
+            </p>
+          </div>
+          <div className="flex flex-col gap-4 border border-black dark:border-white p-4">
+            <h1 className="text-lg md:text-xl font-[family-name:var(--font-geist-mono)] border-b border-black dark:border-white pb-2 flex justify-between">
+              Pokemon 
+              <a href="https://pokemon-learning-vite-heriantos-projects.vercel.app/" className="font-[family-name:var(--font-geist-mono)]">
+              <Image
+                aria-hidden
+                src="/external-link.svg"
+                alt="Globe icon"
+                width={16}
+                height={16}
+              />
+              </a>
+            </h1>
+            <p className="text-justify indent-4">
+              project studi kasus untuk mempelajari framework React.Js
+            </p>
+          </div>
+          <div className="flex flex-col gap-4 border border-black dark:border-white p-4">
+            <h1 className="text-lg md:text-xl font-[family-name:var(--font-geist-mono)] border-b border-black dark:border-white pb-2 flex justify-between">
+              API Clove Comodity 
+              <a href="https://api-clove.vercel.app/" className="font-[family-name:var(--font-geist-mono)]">
+              <Image
+                aria-hidden
+                src="/external-link.svg"
+                alt="Globe icon"
+                width={16}
+                height={16}
+              />
+              </a>
+            </h1>
+            <p className="text-justify indent-4">
+              Project Api for Dicoding Challange
+            </p>
+          </div>
+          <div className="flex flex-col gap-4 border border-black dark:border-white p-4">
+            <h1 className="text-lg md:text-xl font-[family-name:var(--font-geist-mono)] border-b border-black dark:border-white pb-2 flex justify-between">
+              Pilot Bandung 
+              <a href="https://pilotbandung.com/" className="font-[family-name:var(--font-geist-mono)]">
+              <Image
+                aria-hidden
+                src="/external-link.svg"
+                alt="Globe icon"
+                width={16}
+                height={16}
+              />
+              </a>
+            </h1>
+            <p className="text-justify indent-4">
+              Web project for usaha Jasa Supir dan Rental Mobil
+            </p>
+          </div>
+          <div className="flex flex-col gap-4 border border-black dark:border-white p-4">
+            <h1 className="text-lg md:text-xl font-[family-name:var(--font-geist-mono)] border-b border-black dark:border-white pb-2 flex justify-between">
+              Project Learning
+              <a href="https://portofilio-tailwind-github-io-heriantos-projects.vercel.app/" className="font-[family-name:var(--font-geist-mono)]">
+              <Image
+                aria-hidden
+                src="/external-link.svg"
+                alt="Globe icon"
+                width={16}
+                height={16}
+              />
+              </a>
+            </h1>
+            <p className="text-justify indent-4">
+              Project Pertama kali belajar Tailwind dan Script.js
+            </p>
+          </div>
+        </div>
+        <div className="w-full max-w-5xl border-b border-black dark:border-white"/>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-5xl">
         {
           skills.map((skill, index) => (
@@ -298,7 +371,7 @@ export default function Home() {
                     <Link
                       key={index}
                       href={skill.link}
-                      className={"rounded-full border border-solid transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-8 sm:h-12 px-2 hover:scale-105 sm:px-4 " + (skill.level === 3 ? "opacity-75" : " opacity-50") }
+                      className={"rounded-full border border-solid transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-8 sm:h-12 px-2 hover:scale-105 sm:px-4 opacity-" + (skill.level*25) }
                       rel="noopener noreferrer"
                       translate="no"
                     >
@@ -333,7 +406,7 @@ export default function Home() {
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="/latter"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -344,11 +417,11 @@ export default function Home() {
             width={16}
             height={16}
           />
-          My writing / My note
+          My write / My note
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="dashboard"
           target="_blank"
           rel="noopener noreferrer"
         >
