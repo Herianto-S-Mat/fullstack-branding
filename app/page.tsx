@@ -371,7 +371,19 @@ export default function Home() {
                     <Link
                       key={index}
                       href={skill.link}
-                      className={"rounded-full border border-solid transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-8 sm:h-12 px-2 hover:scale-105 sm:px-4 opacity-" + (skill.level*25) }
+                      className={
+                        skill.level == 0 ? 
+                          "rounded-full border border-solid transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-8 sm:h-12 px-2 hover:scale-105 sm:px-4 opacity-0"
+                          : skill.level == 1 ?
+                            "rounded-full border border-solid transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-8 sm:h-12 px-2 hover:scale-105 sm:px-4 opacity-25"
+                            : skill.level == 2 ?
+                              "rounded-full border border-solid transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-8 sm:h-12 px-2 hover:scale-105 sm:px-4 opacity-50"
+                              : skill.level == 3 ?
+                                "rounded-full border border-solid transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-8 sm:h-12 px-2 hover:scale-105 sm:px-4 opacity-75"
+                                : skill.level == 4 ?
+                                  "rounded-full border border-solid transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-8 sm:h-12 px-2 hover:scale-105 sm:px-4 opacity-100"
+                                  : "rounded-full border border-solid transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-8 sm:h-12 px-2 hover:scale-105 sm:px-4 opacity-0"
+                      }
                       rel="noopener noreferrer"
                       translate="no"
                     >
